@@ -1,10 +1,14 @@
+<script setup>
+import decoratedIco from './decorated-ico.vue';
+</script>
+
 <template>
   <div>
     <h1 class="BigTitle">HOLA Grande</h1>
     <p class="Grenn">HOLA en verde.</p>
     <h2 class="Title">Título Secundario</h2>
     <p class="TilePlomo">Probando imagen y ruta assets.</p>
-    <img src="@/assets/ico.png" alt="Ico" class="ico">
+    <decoratedIco></decoratedIco>
   </div>
 </template>
 
@@ -35,10 +39,5 @@ export default {
 
 .TilePlomo {
   color: #888;
-}
-
-.ico {
-  width: 50px;
-  height: 50px;
 }
 </style>
