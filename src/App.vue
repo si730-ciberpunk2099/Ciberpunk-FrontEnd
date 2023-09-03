@@ -4,10 +4,13 @@ import MyComponent from './components/MyComponent.vue'
 </script>
 
 <template>
-  <header>
-    <MyComponent />
-  </header>
   <main>
+    <MyComponent />
+    <MyComponent />
+    <MyComponent />
+    <MyComponent />
+    <MyComponent />
+    <MyComponent />
     <MyComponent />
   </main>
 </template>
