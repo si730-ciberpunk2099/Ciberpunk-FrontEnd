@@ -16,7 +16,7 @@
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
   }
   
   .ico {
