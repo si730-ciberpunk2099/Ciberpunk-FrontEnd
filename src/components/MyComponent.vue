@@ -4,7 +4,7 @@ import decoratedIco from './decorated-ico.vue';
 
 <template>
   <div>
-    <h1 class="BigTitle">HOLA Grande</h1>
+    <h1 class="BigTitle">{{ $t('HOLAGrande')}}</h1>
     <p class="Grenn">HOLA en verde.</p>
     <h2 class="Title">Título Secundario</h2>
     <p class="TilePlomo">Probando imagen y ruta assets.</p>
@@ -19,6 +19,7 @@ export default {
       mensaje: 'Hola, casi me olvido del Laboratorio',
     };
   },
+  name: 'MyComponent'
 };
 </script>
 
