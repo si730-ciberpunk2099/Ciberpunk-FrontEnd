@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      cpuOptions: ["Ryzen", "Intel", "Movistar xd"],
+      cpuOptions: ["Ryzen", "Intel", "Cambiate a Movistar xd"],
     };
   },
   name: 'MyComponent'

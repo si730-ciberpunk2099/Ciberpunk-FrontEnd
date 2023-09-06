@@ -5,7 +5,8 @@ import MyComponent from './components/MyComponent.vue';
 
 <template>
   <div id="app">
-    <p class="Title">CIBERPUNK 2099</p>
+    <img src="@/assets/Tittle.png" alt="No carga el titulo" class="title-png">
+    <p class="Title">Ensamble su propia PC Gaming</p>
     <MyComponent></MyComponent>
     <BackgroundDeg></BackgroundDeg>
   </div>
@@ -28,5 +29,12 @@ export default {
 .Title {
   font-size: 50px;
   color: #ffffff;
+}
+.title-png {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 500px;
+    height: auto;
 }
 </style>
