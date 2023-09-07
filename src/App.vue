@@ -1,6 +1,7 @@
 <script setup>
 import BackgroundDeg from './components/BackgroundDeg.vue';
 import MyComponent from './components/MyComponent.vue';
+
 </script>
 
 <template>
@@ -23,6 +24,7 @@ export default {
 </script>
 
 <style scoped>
+
 .app{
   flex-direction:column;
 }

@@ -1,6 +1,10 @@
 <script setup>
 import CategoryRecVue from './Category-Rec.vue';
 import decoratedIco from './decorated-ico.vue';
+import Calendar from 'primevue/calendar';
+import { ref } from "vue";
+
+const date = ref();
 </script>
 
 <template>
@@ -10,6 +14,10 @@ import decoratedIco from './decorated-ico.vue';
     <p class="Grenn">HOLA en verde.</p>
     <h2 class="Title">Título Secundario</h2>
     <p class="TilePlomo">Probando imagen y ruta assets.</p>
+
+    <div class="card flex justify-content-center">
+        <Calendar v-model="date" />
+    </div>
 
     <div class="left">
       <decoratedIco></decoratedIco>
