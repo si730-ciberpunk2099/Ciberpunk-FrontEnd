@@ -48,9 +48,16 @@ export default {
 </script>
 
 <style scoped>
+
 .BigTitle {
   font-size: 24px;
   color: green;
+}
+
+.conteiner{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .Grenn {
@@ -65,15 +72,9 @@ export default {
 .TilePlomo {
   color: #888;
 }
-
-.conteiner {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 50px;
-}
-
 .left {
+  display:flex;
+  flex-direction: row;
   flex: 1;
   width: auto;
 }
