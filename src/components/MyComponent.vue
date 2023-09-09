@@ -11,9 +11,9 @@ const date = ref();
   <div class="conteiner">
 
     <h1 class="BigTitle">{{ $t('HOLAGrande')}}</h1>
-    <p class="Grenn">HOLA en verde.</p>
-    <h2 class="Title">Título Secundario</h2>
-    <p class="TilePlomo">Probando imagen y ruta assets.</p>
+    <p class="Grenn">{{ $t('Subtitulo')}}</p>
+    <h2 class="Title">{{ $t('Subtitulo2')}}</h2>
+    <p class="TilePlomo">{{ $t('Description')}}</p>
 
     <div class="card flex justify-content-center">
         <Calendar v-model="date" />

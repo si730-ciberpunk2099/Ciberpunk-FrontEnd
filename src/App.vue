@@ -7,7 +7,7 @@ import MyComponent from './components/MyComponent.vue';
 <template>
   <div id="app">
     <img src="@/assets/Tittle.png" alt="No carga el titulo" class="title-png">
-    <p class="Title">Ensamble su propia PC Gaming</p>
+    <p class="Title">{{ $t('Titulaso')}}</p>
     <MyComponent></MyComponent>
     <BackgroundDeg></BackgroundDeg>
   </div>
