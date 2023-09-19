@@ -1,9 +1,8 @@
 <script setup>
-import CategoryRecVue from './Category-Rec.vue';
-import decoratedIco from './decorated-ico.vue';
 import Calendar from 'primevue/calendar';
+import Navbar from "@/components/Navbar.vue";
 import { ref } from "vue";
-
+import BackgroundDeg from "@/components/BackgroundDeg.vue";
 const date = ref();
 </script>
 
@@ -27,6 +26,8 @@ const date = ref();
 
     <div class="right">
       <CategoryRecVue title="CPU" :options="cpuOptions" />
+      <navbar></navbar>
+      <BackgroundDeg></BackgroundDeg>
     </div>
 
   </div>

@@ -1,20 +1,27 @@
 <template>
-    <div class="not-found">
-        <Panel header="Error 404" class="not-found-panel">
-            <h1 class="not-found-title p-text-bold">404</h1>
-            <p class="not-found-text">No se encontró la página ingresada</p>
-        </Panel>
+    <div className="not-found">
+        <div className="center-content">
+            <Panel header="Error 404" class="not-found-panel">
+                <h1 className="not-found-title p-text-bold">404</h1>
+                <p className="not-found-text">No se encontró la página ingresada</p>
+            </Panel>
+        </div>
+    </div>
+    <div className="background">
+        <BackgroundDeg></BackgroundDeg>
     </div>
 </template>
 
 <script>
 import Panel from 'primevue/panel';
+import BackgroundDeg from "@/components/BackgroundDeg.vue";
 
 export default {
     components: {
+        BackgroundDeg,
         Panel,
     },
-    name: 'nofaund-404'
+    name: 'not-found-404'
 }
 </script>
 
@@ -23,9 +30,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
     justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .not-found-panel {

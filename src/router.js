@@ -1,12 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import MyComponent from "@/components/MyComponent.vue";
 import Nofaund404 from "@/components/Nofaund404.vue";
-import nofaund404 from "@/components/Nofaund404.vue";
 import DecorateIco from "@/components/decorated-ico.vue";
 
 const routes = [
     { path: "/", component: MyComponent },
-    { path: "/404", component: nofaund404 },
+    { path: "/404", component: Nofaund404 },
     { path: "/tutorial", component: DecorateIco },
     { path: "/:pathMatch(.*)*", component: Nofaund404 },
 ];
