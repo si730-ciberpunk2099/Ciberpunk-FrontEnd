@@ -2,8 +2,7 @@
 </script>
 
 <template>
-  <div id="app">
-    <img src="@/assets/Tittle.png" alt="No carga el titulo" class="title-png">
+  <div>
       <router-view></router-view>
   </div>
 </template>
@@ -17,17 +16,5 @@ export default {
 </script>
 
 <style scoped>
-.app {
-display: flex;
-flex-direction: column;
-}
-
-.title-png {
-position: fixed;
-top: 10px;
-left: 20px;
-width: 500px;
-height: auto;
-}
 </style>
 

@@ -9,6 +9,7 @@
 
 <script>
 export default {
+    name: 'CategoryRecVue',
 props: {
     title: String,
     options: Array,
