@@ -31,31 +31,35 @@ const save = () => {
 </script>
 
 <template>
-    <div class="base">
-        <background-animated-component></background-animated-component>
-        <navbar></navbar>
-        <img src="@/assets/Tittle.png" alt="No carga el titulo" className="title-png">
-    </div>
-    <div className="conteiner-1">
-        <Toast/>
-        <SplitButton label="Comensar Ahora" :model="items" icon="pi pi-plus" @click="save" outlined class="mb-2"/>
-        <TabView class="vistas3">
-            <TabPanel header="PC Gaming">
-                <p>
-                    Las computadoras gamers son equipos de escritorio que están diseñados específicamente para reproducir los videojuegos, por ello se requiera una increible potencia de procesamiento gráfico
-                </p>
-            </TabPanel>
-            <TabPanel header="PC Designer">
-                <p>
-                    Las computadoras gamers son equipos de escritorio que están diseñados específicamente para reproducir los videojuegos con la misma calidad (y muchas veces hasta muy superior)
-                </p>
-            </TabPanel>
-            <TabPanel header="PC Profesional">
-                <p>
-                    Las computadoras gamers son equipos de escritorio que están diseñados específicamente para reproducir los videojuegos con la misma calidad (y muchas veces hasta muy superior)
-                </p>
-            </TabPanel>
-        </TabView>
+    <div class="todo">
+        <div class="conteiner-1">
+            <background-animated-component></background-animated-component>
+            <navbar></navbar>
+            <img src="@/assets/Tittle.png" alt="No carga el titulo" className="title-png">
+        </div>
+        <div className="conteiner-2">
+            <div class="boton-1">
+                <Toast/>
+                <SplitButton label="Comensar Ahora" :model="items" icon="pi pi-plus" @click="save" outlined class="mb-2"/>
+            </div>
+            <TabView class="vistas3">
+                <TabPanel header="Gaming">
+                    <p>
+                        Las computadoras gaming son equipos de escritorio diseñados específicamente para ofrecer una experiencia de juego excepcional. Están equipadas con potentes procesadores gráficos y de alto rendimiento que permiten ejecutar videojuegos exigentes con fluidez y calidad visual. Además, su capacidad de personalización les permite adaptarse a las necesidades de cada jugador, ofreciendo un rendimiento óptimo para los títulos más recientes y exigentes del mercado.
+                    </p>
+                </TabPanel>
+                <TabPanel header="Diseñador">
+                    <p>
+                        Las computadoras para diseño están diseñadas pensando en las necesidades de los profesionales creativos, como diseñadores gráficos y diseñadores de productos. Estas máquinas están optimizadas para ejecutar software de diseño gráfico y modelado 3D de manera eficiente. Ofrecen una potencia de procesamiento y una capacidad gráfica excepcionales para garantizar la creación de proyectos visuales de alta calidad. Además, su amplia gama de puertos y opciones de conectividad facilita la conexión de periféricos y pantallas adicionales, lo que es esencial para la productividad en el trabajo de diseño.
+                    </p>
+                </TabPanel>
+                <TabPanel header="Profesional">
+                    <p>
+                        Las computadoras profesionales son sistemas de alto rendimiento diseñados para satisfacer las necesidades de usuarios que requieren potencia de procesamiento para tareas intensivas. Estas máquinas son ideales para profesionales como ingenieros, científicos de datos y otros especialistas que trabajan con aplicaciones y cargas de trabajo exigentes. Ofrecen un equilibrio entre potencia de CPU y GPU, junto con una amplia capacidad de almacenamiento y opciones de expansión, lo que las convierte en una elección sólida para aquellos que buscan un rendimiento confiable y versatilidad en su trabajo diario.
+                    </p>
+                </TabPanel>
+            </TabView>
+        </div>
     </div>
 </template>
 
@@ -85,17 +89,31 @@ export default {
     width: 300px;
     height: auto;
 }
-.base {
-    z-index: -1;
-}
 .mb-2{
     margin-bottom: 50px;
+    transform: translate(-50%,0%);
 }
-.vistas3{
+.todo{
+    display: flex;
+    position: absolute;
+
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.conteiner-2 {
+    padding: 5px;
+    width: 50%;
+    transform: translate(50%,0%);
     position: relative;
 }
-.conteiner-1 {
-    z-index: 1000;
-
+.boton-1{
+    flex-direction: row;
+    align-content: center;
+    transform: translate(50%,0%);
 }
 </style>

@@ -12,11 +12,12 @@ const visible = ref(false);
     <div class="card flex justify-content-center">
         <Sidebar v-model:visible="visible" position="right">
             <ul>
-                <li><router-link to="/{{ $t('Comparacion-precios')}}">Comparación de precios</router-link></li>
-                <li><router-link to="/catalogo">Catálogo</router-link></li>
-                <li><router-link to="/sobre-nosotros">Sobre nosotros</router-link></li>
-                <li><router-link to="/tiendas">Tiendas</router-link></li>
-                <li><router-link to="/comentarios">Comentarios</router-link></li>
+                <li><router-link to="/Home">{{ $t('Home')}}</router-link></li>
+                <li><router-link to="/ComparacionPrecios">{{ $t('ComparacionPrecios')}}</router-link></li>
+                <li><router-link to="/Catalogo">{{ $t('Catalogo')}}</router-link></li>
+                <li><router-link to="/Nosotros">{{ $t('Nosotros')}}</router-link></li>
+                <li><router-link to="/Tiendas">{{ $t('Tiendas')}}</router-link></li>
+                <li><router-link to="/Comentarios">{{ $t('Comentarios')}}</router-link></li>
             </ul>
         </Sidebar>
     </div>

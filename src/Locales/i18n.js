@@ -9,7 +9,13 @@ const i18n = createI18n({
             Subtitulo2: 'Column and row',
             Description: 'Column in general and row for 3 images',
             Titulaso: 'Ensambleishon PC Gaming',
-            Comparacionprecios: 'Comparacion de precios'
+
+            Home: 'Home',
+            ComparacionPrecios: 'Comparación de precios',
+            Catalogo: 'Catálogo de componentes',
+            Nosotros: 'Sobre nosotros',
+            Tiendas: 'Tiendas afiliadas',
+            Comentarios: 'Comentarios',
         },
         es: {
             HOLAGrande: 'Hola Grande',
@@ -17,9 +23,14 @@ const i18n = createI18n({
             Subtitulo2: 'Columnas y filas',
             Description: 'Columnas para el contenedor y filas para las 3 imagenes',
             Titulaso: 'Ensamble su propia PC Gaming',
-            Comparacionprecios: 'Comparacion de precios'
+
+            Home: 'Inicio',
+            ComparacionPrecios: 'Comparación de precios',
+            Catalogo: 'Catálogo de componentes',
+            Nosotros: 'Sobre nosotros',
+            Tiendas: 'Tiendas afiliadas',
+            Comentarios: 'Comentarios',
         }
     }
 });
-
 export default i18n;
