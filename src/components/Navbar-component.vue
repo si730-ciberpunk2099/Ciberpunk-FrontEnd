@@ -7,12 +7,12 @@ const visible = ref(false);
 
 <template>
     <div class="card flex justify-content-center flex-wrap gap-3">
-        <Button class= "custom-button" icon = "pi pi-angle-double-right" severity="info" outlined @click="visible = true" />
+        <Button class= "custom-button" icon = "pi pi-angle-double-left" severity="info" outlined @click="visible = true" />
     </div>
     <div class="card flex justify-content-center">
         <Sidebar v-model:visible="visible" position="right">
             <ul>
-                <li><router-link to="/comparacion-precios">Comparación de precios</router-link></li>
+                <li><router-link to="/{{ $t('Comparacion-precios')}}">Comparación de precios</router-link></li>
                 <li><router-link to="/catalogo">Catálogo</router-link></li>
                 <li><router-link to="/sobre-nosotros">Sobre nosotros</router-link></li>
                 <li><router-link to="/tiendas">Tiendas</router-link></li>

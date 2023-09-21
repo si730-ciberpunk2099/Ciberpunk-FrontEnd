@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "firebase": "^10.4.0",
     "primeicons": "^6.0.1",
     "primevue": "^3.34.0",
     "vue": "^3.3.4",

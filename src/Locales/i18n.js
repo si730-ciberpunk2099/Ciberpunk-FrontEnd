@@ -8,19 +8,18 @@ const i18n = createI18n({
             Subtitulo: 'Subtittle - Jaguaryou',
             Subtitulo2: 'Column and row',
             Description: 'Column in general and row for 3 images',
-            Titulaso: 'Ensambleishon PC Gaming'
-
+            Titulaso: 'Ensambleishon PC Gaming',
+            Comparacionprecios: 'Comparacion de precios'
         },
         es: {
             HOLAGrande: 'Hola Grande',
             Subtitulo: 'soy un subtitulo holas',
             Subtitulo2: 'Columnas y filas',
             Description: 'Columnas para el contenedor y filas para las 3 imagenes',
-            Titulaso: 'Ensamble su propia PC Gaming'
+            Titulaso: 'Ensamble su propia PC Gaming',
+            Comparacionprecios: 'Comparacion de precios'
         }
     }
 });
-
-
 
 export default i18n;
