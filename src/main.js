@@ -7,6 +7,8 @@ import i18n from "./locales/i18n";
 import PrimeVue from 'primevue/config';
 import 'primeicons/primeicons.css';
 import 'primevue/resources/themes/viva-dark/theme.css';
+import 'primeflex/primeflex.css';
+
 import ToastService from 'primevue/toastservice';
 
 import router from "@/router";

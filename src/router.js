@@ -2,16 +2,18 @@ import { createRouter, createWebHistory } from "vue-router";
 import Nofaund404 from "@/components/Nofaund404.vue";
 import homeComponent from "@/components/Home-component.vue";
 import aboutUsComponent from "@/components/AboutUs-Component.vue";
+import ComentsComponent from "@/components/Coments-component.vue";
+import CatalogoComponent from "@/components/Catalogo-component.vue";
 
 const routes = [
     { path: "/", component: homeComponent },
 
     { path: "/Home", component: homeComponent },
     { path: "/ComparacionPrecios", component: homeComponent },
-    { path: "/Catalogo", component: homeComponent },
+    { path: "/Catalogo", component: CatalogoComponent },
     { path: "/Nosotros", component: aboutUsComponent },
     { path: "/Tiendas", component: homeComponent },
-    { path: "/Comentarios", component: homeComponent },
+    { path: "/Comentarios", component: ComentsComponent },
 
     { path: "/:pathMatch(.*)*", component: Nofaund404 },
 

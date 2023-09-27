@@ -1,16 +1,22 @@
 <script setup>
+import { ref } from 'vue';
+
+const isFieldsetCollapsed = ref(true);
 </script>
 
 <template>
     <div class="Contenedor-1">
         <background-animated-component></background-animated-component>
         <navbar></navbar>
-        <h class = "Titulo">
-            Sobre Nosotros
-        </h>
-        <div class="Contenedor-2">
-            <Card class="texto-main">
 
+        <div class="Contenedor-2">
+            <Card class="Titulo">
+                <template #title>
+                    <h1 class="sub-titulo">Bienvenido! </h1>
+                </template>
+            </Card>
+            <Card class="texto-main">
+                <template #title> Bienvenido! </template>
                 <template #content>
                     <p>
                         Bienvenido a nuestro rincón en línea. Somos un apasionado equipo de jóvenes entusiastas que comparte una visión: hacer que el mundo de la PC gaming, el diseño y el trabajo profesional sea accesible para todos, sin importar su nivel de experiencia. Nuestra historia comenzó cuando identificamos un problema común entre aquellos que deseaban adentrarse en estos emocionantes mundos, pero se encontraban con la barrera del desconocimiento técnico.
@@ -19,11 +25,10 @@
                         Nos enorgullece ser tu compañero de confianza en esta emocionante travesía. Estamos aquí para responder tus preguntas, despejar tus dudas y ser tu fuente confiable de información en el mundo de las PCs. ¡Gracias por unirte a nosotros en esta aventura!
                     </p>
                 </template>
-                <template #title> Bienvenido! </template>
             </Card>
 
             <div class="cards">
-                <Fieldset :toggleable="true" class = "card">
+                <Fieldset :toggleable="true" :collapsed="isFieldsetCollapsed" class = "card">
                     <template #legend>
                         <div class="flex align-items-center text-primary">
                             <span class="pi pi-user mr-2"></span>
@@ -39,7 +44,7 @@
                     <img src="@/assets/Fotos/Edery.png" alt="Foto de Edery" className="Foto">
                 </Fieldset>
 
-                <Fieldset :toggleable="true" class = "card">
+                <Fieldset :toggleable="true" :collapsed="isFieldsetCollapsed" class = "card">
                     <template #legend>
                         <div class="flex align-items-center text-primary">
                             <span class="pi pi-user mr-2"></span>
@@ -55,7 +60,7 @@
                     <img src="@/assets/Fotos/Frabrizio.png" alt="Foto de Edery" className="Foto">
                 </Fieldset>
 
-                <Fieldset :toggleable="true" class = "card">
+                <Fieldset :toggleable="true" :collapsed="isFieldsetCollapsed" class = "card">
                     <template #legend>
                         <div class="flex align-items-center text-primary">
                             <span class="pi pi-user mr-2"></span>
@@ -71,7 +76,7 @@
                     <img src="@/assets/Fotos/Gianfranco.png" alt="Foto de Edery" className="Foto">
                 </Fieldset>
 
-                <Fieldset :toggleable="true" class = "card">
+                <Fieldset :toggleable="true" :collapsed="isFieldsetCollapsed" class = "card">
                     <template #legend>
                         <div class="flex align-items-center text-primary">
                             <span class="pi pi-user mr-2"></span>
@@ -87,7 +92,7 @@
                     <img src="@/assets/Fotos/Mariano.png" alt="Foto de Edery" className="Foto">
                 </Fieldset>
 
-                <Fieldset :toggleable="true" class = "card">
+                <Fieldset :toggleable="true" :collapsed="isFieldsetCollapsed" class = "card">
                     <template #legend>
                         <div class="flex align-items-center text-primary">
                             <span class="pi pi-user mr-2"></span>
@@ -117,7 +122,6 @@ export default {
     components: {
         Navbar,
         backgroundAnimatedComponent,
-        Fieldset,
         Card,
     }
 }
@@ -127,9 +131,8 @@ export default {
 .Titulo{
     font-family: Roboto, Helvetica, Arial, sans-serif;
     position: relative;
-
-    margin-top: 220px;
-    margin-bottom: 50px;
+    margin-top: 400px;
+    margin-bottom: 20px;
     font-size: 60px;
     color: #ffffff;
     text-shadow: 0 0 50px rgb(100, 200, 250);
@@ -142,7 +145,6 @@ export default {
     padding: 2px;
 }
 .Contenedor-1 {
-    background-color: #b9ffe4;
     display: flex;
     position: absolute;
 
@@ -163,9 +165,6 @@ export default {
     align-content: space-around;
     position: relative;
     width: 70%;
-}
-.cards{
-
 }
 .card{
     padding: 10px;
