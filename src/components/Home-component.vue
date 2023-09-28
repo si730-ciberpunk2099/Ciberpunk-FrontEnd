@@ -40,22 +40,22 @@ const save = () => {
         <div className="conteiner-2">
             <div class="boton-1">
                 <Toast/>
-                <SplitButton label="Comensar Ahora" :model="items" icon="pi pi-plus" @click="save" outlined class="mb-2"/>
+                <SplitButton label = "Comensar Ahora" :model="items" icon="pi pi-plus" @click="save" outlined class="mb-2"/>
             </div>
             <TabView class="vistas3">
                 <TabPanel header="Gaming">
                     <p>
-                        Las computadoras gaming son equipos de escritorio diseñados específicamente para ofrecer una experiencia de juego excepcional. Están equipadas con potentes procesadores gráficos y de alto rendimiento que permiten ejecutar videojuegos exigentes con fluidez y calidad visual. Además, su capacidad de personalización les permite adaptarse a las necesidades de cada jugador, ofreciendo un rendimiento óptimo para los títulos más recientes y exigentes del mercado.
+                        {{$t('HomeGamingDescrip')}}
                     </p>
                 </TabPanel>
                 <TabPanel header="Diseñador">
                     <p>
-                        Las computadoras para diseño están diseñadas pensando en las necesidades de los profesionales creativos, como diseñadores gráficos y diseñadores de productos. Estas máquinas están optimizadas para ejecutar software de diseño gráfico y modelado 3D de manera eficiente. Ofrecen una potencia de procesamiento y una capacidad gráfica excepcionales para garantizar la creación de proyectos visuales de alta calidad. Además, su amplia gama de puertos y opciones de conectividad facilita la conexión de periféricos y pantallas adicionales, lo que es esencial para la productividad en el trabajo de diseño.
+                        {{$t('HomeDisignerDescrip')}}
                     </p>
                 </TabPanel>
                 <TabPanel header="Profesional">
                     <p>
-                        Las computadoras profesionales son sistemas de alto rendimiento diseñados para satisfacer las necesidades de usuarios que requieren potencia de procesamiento para tareas intensivas. Estas máquinas son ideales para profesionales como ingenieros, científicos de datos y otros especialistas que trabajan con aplicaciones y cargas de trabajo exigentes. Ofrecen un equilibrio entre potencia de CPU y GPU, junto con una amplia capacidad de almacenamiento y opciones de expansión, lo que las convierte en una elección sólida para aquellos que buscan un rendimiento confiable y versatilidad en su trabajo diario.
+                        {{$t('HomeProfessionalDescrip')}}
                     </p>
                 </TabPanel>
             </TabView>

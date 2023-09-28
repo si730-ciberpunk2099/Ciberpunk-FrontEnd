@@ -12,10 +12,10 @@ const value = ref('');
         <div class="contenedor-1">
             <img src="@/assets/Imagenes/trabajador.png" alt="No carga el titulo" className="iconpng">
             <Card class = "Card-1">
-                <template #title> Comentarios </template>
+                <template #title> {{$t('TComentarios')}} </template>
                 <template #content>
                     <p>
-                        Comentanos tus dudas, y consejos para seguir mejorando nuestra pagina! :D
+                        {{$t('ComantirosDescrip')}}
                     </p>
                 </template>
             </Card>
