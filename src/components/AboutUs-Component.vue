@@ -12,17 +12,14 @@ const isFieldsetCollapsed = ref(true);
         <div class="Contenedor-2">
             <Card class="Titulo">
                 <template #title>
-                    <h1 class="sub-titulo">Bienvenido! </h1>
+                    <h1 class="sub-titulo">{{$t('Bienvenido') }} </h1>
                 </template>
             </Card>
             <Card class="texto-main">
-                <template #title> Bienvenido! </template>
+                <template #title>{{$t('Bienvenido') }} </template>
                 <template #content>
                     <p>
-                        Bienvenido a nuestro rincón en línea. Somos un apasionado equipo de jóvenes entusiastas que comparte una visión: hacer que el mundo de la PC gaming, el diseño y el trabajo profesional sea accesible para todos, sin importar su nivel de experiencia. Nuestra historia comenzó cuando identificamos un problema común entre aquellos que deseaban adentrarse en estos emocionantes mundos, pero se encontraban con la barrera del desconocimiento técnico.
-                        Fue entonces cuando decidimos unir fuerzas y crear esta página web con un propósito claro: brindar apoyo y recursos a quienes desean construir su propia PC, independientemente de si son principiantes o ya tienen experiencia en el campo. Creemos que todos merecen la oportunidad de explorar y aprovechar al máximo las posibilidades que ofrecen las PC para gaming, el diseño o el trabajo profesional.
-                        Nuestra misión es proporcionarte las herramientas necesarias para comprender mejor el proceso de ensamblaje de una PC, ofreciéndote una experiencia de simulación que te permita aprender y practicar antes de aventurarte en la construcción real. Además, encontrarás una amplia gama de recursos útiles, consejos y guías que te ayudarán a tomar decisiones informadas y a sacar el máximo provecho de tu equipo.
-                        Nos enorgullece ser tu compañero de confianza en esta emocionante travesía. Estamos aquí para responder tus preguntas, despejar tus dudas y ser tu fuente confiable de información en el mundo de las PCs. ¡Gracias por unirte a nosotros en esta aventura!
+                        {{$t('AboutUsDescrip') }}
                     </p>
                 </template>
             </Card>
@@ -36,10 +33,7 @@ const isFieldsetCollapsed = ref(true);
                         </div>
                     </template>
                     <p class="m-0">
-                        Soy un estudiante universitario enfocado en el desarrollo de programación, con experiencia en Python, C++,
-                        SQL, C#, MATLAB y programación orientada a objetos. También tengo habilidades avanzadas en Excel y un
-                        nivel intermedio de inglés. Mi objetivo es crecer en el campo de la inteligencia artificial y el aprendizaje
-                        automático, alcanzando mis metas y encontrando satisfacción en mi carrera profesional.
+                        {{$t('AboutUsEderyDescrip') }}
                     </p>
                     <img src="@/assets/Fotos/Edery.png" alt="Foto de Edery" className="Foto">
                 </Fieldset>
@@ -52,10 +46,7 @@ const isFieldsetCollapsed = ref(true);
                         </div>
                     </template>
                     <p class="m-0">
-                        Soy un estudiante universitario enfocado en el desarrollo de programación, con experiencia en Python, C++,
-                        SQL, C#, MATLAB y programación orientada a objetos. También tengo habilidades avanzadas en Excel y un
-                        nivel intermedio de inglés. Mi objetivo es crecer en el campo de la inteligencia artificial y el aprendizaje
-                        automático, alcanzando mis metas y encontrando satisfacción en mi carrera profesional.
+                        {{$t('AboutUsEderyDescrip') }}
                     </p>
                     <img src="@/assets/Fotos/Frabrizio.png" alt="Foto de Edery" className="Foto">
                 </Fieldset>
@@ -68,10 +59,7 @@ const isFieldsetCollapsed = ref(true);
                         </div>
                     </template>
                     <p class="m-0">
-                        Soy un estudiante universitario enfocado en el desarrollo de programación, con experiencia en Python, C++,
-                        SQL, C#, MATLAB y programación orientada a objetos. También tengo habilidades avanzadas en Excel y un
-                        nivel intermedio de inglés. Mi objetivo es crecer en el campo de la inteligencia artificial y el aprendizaje
-                        automático, alcanzando mis metas y encontrando satisfacción en mi carrera profesional.
+                        {{$t('AboutUsEderyDescrip') }}
                     </p>
                     <img src="@/assets/Fotos/Gianfranco.png" alt="Foto de Edery" className="Foto">
                 </Fieldset>
@@ -84,10 +72,7 @@ const isFieldsetCollapsed = ref(true);
                         </div>
                     </template>
                     <p class="m-0">
-                        Soy un estudiante universitario enfocado en el desarrollo de programación, con experiencia en Python, C++,
-                        SQL, C#, MATLAB y programación orientada a objetos. También tengo habilidades avanzadas en Excel y un
-                        nivel intermedio de inglés. Mi objetivo es crecer en el campo de la inteligencia artificial y el aprendizaje
-                        automático, alcanzando mis metas y encontrando satisfacción en mi carrera profesional.
+                        {{$t('AboutUsEderyDescrip') }}
                     </p>
                     <img src="@/assets/Fotos/Mariano.png" alt="Foto de Edery" className="Foto">
                 </Fieldset>
@@ -100,10 +85,7 @@ const isFieldsetCollapsed = ref(true);
                         </div>
                     </template>
                     <p class="m-0">
-                        Soy un estudiante universitario enfocado en el desarrollo de programación, con experiencia en Python, C++,
-                        SQL, C#, MATLAB y programación orientada a objetos. También tengo habilidades avanzadas en Excel y un
-                        nivel intermedio de inglés. Mi objetivo es crecer en el campo de la inteligencia artificial y el aprendizaje
-                        automático, alcanzando mis metas y encontrando satisfacción en mi carrera profesional.
+                        {{$t('AboutUsEderyDescrip') }}
                     </p>
                     <img src="@/assets/Fotos/Rodrigo.png" alt="Foto de Edery" className="Foto">
                 </Fieldset>

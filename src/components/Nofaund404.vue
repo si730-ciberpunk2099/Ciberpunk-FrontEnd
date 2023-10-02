@@ -3,7 +3,7 @@
         <div className="center-content">
             <Panel header="Error 404" class="not-found-panel">
                 <h1 className="not-found-title p-text-bold">404</h1>
-                <p className="not-found-text">No se encontró la página ingresada</p>
+                <p className="not-found-text">{{$t('Noseencontro404')}}</p>
             </Panel>
         </div>
     </div>
