@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar-component.vue";
 import backgroundAnimatedComponent from "@/components/background-animated-component.vue";
 export default {
+    name: "simulator-component",
     components: {
         Navbar,
         backgroundAnimatedComponent,

@@ -4,6 +4,9 @@ import homeComponent from "@/components/Home-component.vue";
 import aboutUsComponent from "@/components/AboutUs-Component.vue";
 import ComentsComponent from "@/components/Coments-component.vue";
 import CatalogoComponent from "@/components/Catalogo-component.vue";
+import loginComponent from "@/components/login-component.vue";
+import registerComponent from "@/components/register-component.vue";
+import catalogoComponent from "@/components/Catalogo-component.vue";
 
 const routes = [
     { path: "/", component: homeComponent },
@@ -14,6 +17,9 @@ const routes = [
     { path: "/Nosotros", component: aboutUsComponent },
     { path: "/Tiendas", component: homeComponent },
     { path: "/Comentarios", component: ComentsComponent },
+    { path: "/Login", component: loginComponent },
+    { path: "/Register", component: registerComponent },
+    { path: "/Catalog", component: catalogoComponent },
 
     { path: "/:pathMatch(.*)*", component: Nofaund404 },
 
